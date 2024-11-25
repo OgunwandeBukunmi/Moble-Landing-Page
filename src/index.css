@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Geist+Mono:wght@100..900&display=swap');
+
+:root{
+  --accent-color : #505F98;
+  --primary-color : #fff;
+  --secondary-color : #091133;
+  --tertiary-color :#929ECC;
+}
+.big{
+    font-size: 2.5rem;
+}.medium {
+  font-size : 1.7rem;
+}
+.extra-large{
+  font-size : 3rem;
+}
+.action-button{
+  background-color : var(--accent-color);
+  color : var(--primary-color);
+  padding : 10px 55px;
+  text-align: center;
+  letter-spacing : 3px;
+  outline : none;
+  border : 1px ;
+  cursor : pointer;
+    overflow: hidden;
+  
+}.sec-action-text{
+  background-color : var(--primary-color);
+  border : 1px solid var(--accent-color);
+  color : var(--accent)
+}
+.text{
+  color : var(--accent-color);
+  cursor : pointer;
+  
+}
+.sec-text{
+  opacity : 0.7;
+}
+.main-text{
+  cursor : pointer;
+  color : var(--secondary-color);
+}.full {
+  width : 100%;
+}.half {
+  width : 50%;
+}
+*{
+  margin :0;
+  padding :0;
+  box-sizing: border-box;
+  overflow-x : hidden;
+  font-family : "Funnel Sans" ,  monospace;
+}
+#root{
+  min-height : 100vh;
+  width : 100vw;
+  display : flex;
+  flex-direction :column;
+  align-items :center;
+  padding : 0 10vw;
+}
+#hero{
+  min-height : 100vh;
+  width : 100%;
+  display :flex;
+  flex-direction: column;
+  align-items: center;
+  gap : 30vh;
+  position : relative;
+}
+header{
+  width : 100%;
+  padding : 10px;
+  display : flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+header .menu{
+  display :flex;
+  justify-content: space-between;
+  align-items: center;
+  gap : 50px;
+  overflow: hidden;
+}
+header  .menu > div{
+  display :flex;
+  gap : 30px;
+  justify-content: space-between;
+  
+}header .menu div a {
+  text-decoration: none;
+  overflow: hidden;
+  
+}#hero div{
+  display :flex;
+  align-items: center;
+}#hero div main{
+  
+  display :flex;
+  flex-direction: column;
+  gap : 50px;
+
+}#hero div main > div{
+  display : flex;
+  gap : 20px;
+  align-items: center;
+}
+.designer{
+  position : absolute;
+  width : 150vw;
+  height : 900px;
+ left : 50px;
+ top : -170px;
+
+}.section {
+  display :flex;
+  align-items: center;
+  gap :10px;
+  margin-top : 25vh;
+}.section main{
+display :flex;
+flex-direction: column;
+gap : 25px;
+justify-content: space-between;
+}.section1 main .Iconcontainer{
+  display : flex;
+  justify-content: space-between;
+  align-items : center;
+  margin-top : 40px;
+} .icon{
+  width :36px;
+  height : 36px;
+}.section-button{
+align-self : start;
+}.pricing {
+  align-items: center;
+  text-align: center;
+  gap : 60px;
+  width : 100%;
+
+ }.footer{
+  display : flex;
+  flex-direction: column;
+  margin : 25vh 0 10vh 0;
+  width : 100%;
+  gap : 20px;
+ }.footer > div {
+  display : flex; 
+  justify-content: space-between;
+  align-items: center;
+ }.footer > div:nth-child(2) nav a {
+   text-decoration :none;
+   margin : 0px 10px;
+ }
+.hamburger{
+  display : none;
+}
+ @media (max-width : 823px)  {
+.designer {
+  left :0;
+  z-index: -5;
+}
+.menu{
+  position : absolute;
+  z-index : 10;
+  width :0;
+  height : 0;
+  top : 60px;
+  flex-direction : column;
+  background-color: #091133;
+  align-items :center;
+  border-radius : 10px;
+  justify-content: space-between;
+  padding  : 20px 0;
+ 
+}
+.menu div {
+    overflow: hidden;
+}.menu > div a {
+  color : var(--primary-color);
+  overflow: hidden;
+  
+}
+.show{
+  animation: show 1s 1;
+  width: 70vw;
+  height: 50vh;
+}
+
+
+.menu div {
+  flex-direction: column;
+}.hamburger {
+  display : block;
+}
+@keyframes show {
+  0%{
+    height :0;
+    width :0;
+  }100%{
+  width: 70vw;
+  height: 50vh;
+  }
+}
+ }
+ @media (max-width : 567px) {
+  .section {
+    flex-direction: column;
+  }
+  .half {
+    width : 100%;
+  }.footer div{
+    flex-direction :column;
+  }
+ }
